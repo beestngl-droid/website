@@ -9,13 +9,13 @@ function Footer() {
         <div className="container">
           <div className="footer-grid">
             <div className="footer-col">
-              <img src="/assets/logos/Bees_Logo.png" alt="BEES" className="footer-logo" />
-              <p>Leading Indian export company specializing in agricultural products, spices, ayurveda, handicrafts, and more. APEDA certified exporter serving global markets.</p>
+              <img src="/assets/logos/website_logo_transparent_background.png" alt="BEES Export logo" className="footer-logo" />
+              <p>Connecting Indian organic agricultural products, premium spices, and handcrafted heritage with global markets. APEDA registered, gold-standard quality assured partner.</p>
               <div className="social-links">
-                <a href="#" aria-label="Facebook"><FiFacebook /></a>
-                <a href="#" aria-label="Twitter"><FiTwitter /></a>
-                <a href="#" aria-label="Instagram"><FiInstagram /></a>
-                <a href="#" aria-label="LinkedIn"><FiLinkedin /></a>
+                <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook"><FiFacebook /></a>
+                <a href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter"><FiTwitter /></a>
+                <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><FiInstagram /></a>
+                <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FiLinkedin /></a>
               </div>
             </div>
 
@@ -43,14 +43,19 @@ function Footer() {
             </div>
 
             <div className="footer-col">
-              <h4>Contact Info</h4>
+              <h4>Global Trade Info</h4>
               <ul className="contact-list">
-                <li><FiMapPin /> <span>India</span></li>
-                <li><FiPhone /> <span>+91 98765 43210</span></li>
+                <li><FiMapPin /> <span>New Delhi, India</span></li>
+                <li><FiPhone /> <span>+91 94727 92999</span></li>
                 <li><FiMail /> <span>info@bees.org.in</span></li>
               </ul>
+              
               <div className="certification-badge">
-                <img src="/assets/certifications/AGRICULTURAL-PROCESSED-FOOD-PRODUCTS-EXPORT-DEVELOPMENT-AUTHORITY-APEDA-1.jpg" alt="APEDA Certified" />
+                <img 
+                  src="/assets/certifications/AGRICULTURAL-PROCESSED-FOOD-PRODUCTS-EXPORT-DEVELOPMENT-AUTHORITY-APEDA-1.jpg" 
+                  alt="APEDA Certified Exporter logo" 
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
@@ -59,7 +64,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <div className="container">
-          <p>&copy; 2024 BEES Export Company. All rights reserved. | APEDA Registered Exporter</p>
+          <p>Est. 2015 · &copy; {new Date().getFullYear()} BEES Export Company. All rights reserved. | APEDA Registered Exporter | ISO 9001:2015 Compliant</p>
         </div>
       </div>
     </footer>

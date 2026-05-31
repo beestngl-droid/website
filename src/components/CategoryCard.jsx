@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function CategoryCard({ category }) {
+  const productCount = category.products.length;
+
   return (
     <Link to={`/products/${category.id}`} className="category-card">
       <div className="category-image">
@@ -9,7 +11,7 @@ function CategoryCard({ category }) {
       </div>
       <div className="category-info">
         <h3>{category.name}</h3>
-        <p>{category.products.length} Products</p>
+        <p>{productCount === 1 ? '1 Product' : `${productCount} Products`}</p>
       </div>
     </Link>
   );
